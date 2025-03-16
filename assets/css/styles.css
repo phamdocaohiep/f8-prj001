@@ -75,14 +75,13 @@ a {
     align-items: center;
 }
 
-/* header */
-
-.header {
-    background-color: #e6f0ff;
-    color: #fff;
-    height: 100vh;
+/* fixed header */
+.fixed-header {
     padding-top: 26px;
-    position: relative;
+    background-color: #e6f0ff;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
 }
 
 .navbar {
@@ -129,6 +128,21 @@ a {
     font-weight: 500;
     font-size: 1.4rem;
     color: var(--primary-color);
+}
+/* header */
+.hero-wrap {
+    /* color: #fff;
+    padding-top: 26px;
+    position: relative;
+    background-color: #e6f0ff; */
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #e6f0ff;
+    /* height: calc(100vh - 90px); */
+    height: 100vh;
 }
 
 .hero {
