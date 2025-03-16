@@ -4,6 +4,84 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>F8 Real Estate Project</title>
+
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/img/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/img/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/img/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/img/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/img/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/img/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/img/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/img/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/img/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/img/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/img/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/img/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/img/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/img/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/img/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
         <!-- Reset Css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <!-- Google Font -->
@@ -17,24 +95,24 @@
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
-    <body>
+    <body id="home">
         <div class="fixed-header">
             <div class="content">
                 <div class="navbar">
-                    <a href="/">
+                    <a href="#" class="logo-link" style="display: inline-block">
                         <img
-                            src="./assets/img/logo.svg"
+                            src="./assets/img/logo.png"
                             alt="Besnik."
                             class="logo"
                         />
                     </a>
                     <ul>
                         <li>
-                            <a href="#!" class="navi-link">Home</a>
-                            <a href="#!" class="navi-link">Services</a>
-                            <a href="#!" class="navi-link">Features</a>
-                            <a href="#!" class="navi-link">Resources</a>
-                            <a href="#!" class="navi-link">Contact</a>
+                            <a href="#home" class="navi-link">Home</a>
+                            <a href="#services" class="navi-link">Services</a>
+                            <a href="#features" class="navi-link">Features</a>
+                            <a href="#resources" class="navi-link">Resources</a>
+                            <a href="#contact" class="navi-link">Contact</a>
                         </li>
                     </ul>
 
@@ -48,26 +126,22 @@
 
         <div class="hero-wrap">
             <div class="content">
-                <div class="hero">
-                    <div class="info">
-                        <p class="sub-title">Welcome to Besnik Agency</p>
-                        <h1 class="title">
-                            Discover a place you'll love to live.
-                        </h1>
-                        <p class="desc">
-                            get the best real estate deals first, before they
-                            hit the mass market! hot foreclosure deals with one
-                            simple search
-                        </p>
-                        <a href="#!" class="btn btn-cta">More About Us</a>
-                    </div>
-
-                    <img
-                        src="./assets/img/hero-img.svg"
-                        alt="Discover a place you'll love to live."
-                        class="hero-img"
-                    />
+                <div class="info">
+                    <p class="sub-title">Welcome to Besnik Agency</p>
+                    <h1 class="title">Discover a place you'll love to live.</h1>
+                    <p class="desc">
+                        get the best real estate deals first, before they hit
+                        the mass market! hot foreclosure deals with one simple
+                        search
+                    </p>
+                    <a href="#!" class="btn btn-cta">More About Us</a>
                 </div>
+
+                <img
+                    src="./assets/img/hero-img.svg"
+                    alt="Discover a place you'll love to live."
+                    class="hero-img"
+                />
             </div>
         </div>
 
@@ -110,7 +184,7 @@
             </div>
         </div>
 
-        <div class="guides">
+        <div class="guides" id="services">
             <div class="content">
                 <h2 class="sub-title">How its works?</h2>
                 <p class="desc">
@@ -178,7 +252,7 @@
         </div>
 
         <!-- Feature -->
-        <div class="featured">
+        <div class="featured" id="features">
             <div class="content">
                 <header>
                     <h2 class="sub-title">Featured Properties</h2>
@@ -323,7 +397,7 @@
         </div>
 
         <!-- Statistic -->
-        <div class="stats">
+        <div class="stats" id="resources">
             <div class="content">
                 <div class="row">
                     <div class="img-block">
@@ -528,7 +602,7 @@
         </div>
 
         <!-- Subscription -->
-        <div class="subscription">
+        <div class="subscription" id="contact">
             <div class="content">
                 <div class="body">
                     <div class="info">
